@@ -1,0 +1,71 @@
+@import '../../styles/color-variables.scss';
+
+.navbar-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20vw;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $bg-primary-color;
+
+    .navbar-links{
+        display: flex;
+        gap: 30px;
+
+        a{
+            text-decoration: none;
+            color: $quaternary-color;
+            padding-bottom: 5px;
+
+            &:hover{
+               border-bottom: 2px solid $primary-color;
+            }   
+         
+        }
+       
+    }
+    .hamburger-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-area{
+
+        padding: 10px 5vw;
+
+        .navbar-links{
+            position: absolute;
+            top: -260%;
+            left: 0;    
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: $bg-secondary-color;
+            transition: all 0.3s ease-in;
+            z-index: 1000;
+
+        }
+
+        .hamburger-icon{
+            display: block;
+            cursor:pointer
+        }
+
+        .hamburger-icon:hover{
+            transform: scale(110%);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-links.open{
+            top: 100px;
+            transition: all 0.3s ease-in;
+            padding: 20px;
+        }
+    }
+}
+

@@ -1,0 +1,13 @@
+<nav class="navbar-area">
+    <img src="logo.png" width="140px" height="auto">
+    <div class="navbar-links" [class.open]="isOpen">
+        <a href="#home-section">Home</a>
+        <a href="#program-section">Program</a>
+        <a href="#service-section">Service</a>
+        <a href="#about-section">About</a>
+        <a href="#prices-section">Prices</a>
+        <a href="#community-section">Community</a>
+    </div>
+    <img src="hamburguer.png" width="40px" alt="" (click)="toggleNavbar()" class="hamburger-icon">
+    <button-component buttonName="Join Now" variant="primary" type="button"/>
+</nav>

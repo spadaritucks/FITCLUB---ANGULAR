@@ -1,0 +1,32 @@
+@import '../../styles/color-variables.scss';
+
+button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    
+
+    &.primary {
+        background-color: $primary-color;
+        color: $quaternary-color;
+        border: none;
+    }
+
+    &.primary:hover {
+        background-color: orangered;
+    }
+
+    &.secondary {
+        background-color: transparent;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        
+        
+    }
+
+    &.secondary:hover {
+        background-color: $primary-color;
+        color: $quaternary-color;
+    }
+}
