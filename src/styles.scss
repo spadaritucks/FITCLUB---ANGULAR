@@ -17,3 +17,15 @@ html{
 body{
     background-color: $bg-primary-color;
 }
+
+
+section {
+    opacity: 0; // Inicialmente invisível
+    transform: translateY(20px); // Move a seção para baixo
+
+    &.visible {
+        opacity: 1; // Torna a seção visível
+        transform: translateY(0); // Retorna à posição original
+        transition: opacity 0.5s ease, transform 0.5s ease; // Animação suave
+    }
+}
