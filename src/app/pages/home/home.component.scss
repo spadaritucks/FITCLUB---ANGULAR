@@ -62,7 +62,6 @@
             img {
                 cursor: pointer;
             }
-
         }
     }
     .program-cards {
@@ -72,7 +71,6 @@
         gap: 20px;
 
         .program {
-            
             background-color: $bg-tertiary-color;
             padding: 20px;
             border-radius: 10px;
@@ -94,7 +92,7 @@
             }
         }
 
-        .program:hover{
+        .program:hover {
             transform: scale(105%);
             transition: all 0.3s ease;
             border: 1px solid $primary-color;
@@ -105,7 +103,7 @@
 
 // Estilos para a seção serviços
 
-.service-section{
+.service-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +112,7 @@
     gap: 40px;
     height: 100vh;
 
-    .service-images{
+    .service-images {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -134,7 +132,7 @@
         }
     }
 
-    .services-text{
+    .services-text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -142,17 +140,16 @@
         gap: 30px;
         width: 400px;
 
-        h2{
+        h2 {
             font-size: 32px;
             font-weight: 700;
         }
-
     }
 }
 
 // Estilos para a seção about
 
-.about-section{
+.about-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,11 +159,11 @@
     height: 100vh;
     gap: 20px;
 
-    .about-text{
+    .about-text {
         width: 40%;
     }
 
-    .about-cards{
+    .about-cards {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -176,26 +173,24 @@
         padding: 10px 20px;
         border-radius: 10px;
 
-        .about-card{
+        .about-card {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
         }
-
-        
     }
 }
 
 // Estilos para a seção prices
 
-.prices-section{
+.prices-section {
     height: 100vh;
     width: 100%;
     color: $quaternary-color;
     padding: 10px 8vw;
 
-    .prices-text{
+    .prices-text {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -204,71 +199,77 @@
         text-align: center;
         padding: 0 20vw;
         margin-bottom: 20px;
-        
     }
-    .prices-container{
+    .prices-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
-       
 
-        .card-prices{
+        .card-prices {
             width: 350px;
-            height: 600px;
+            height: 500px;
             background-color: $bg-tertiary-color;
             padding: 20px;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             gap: 20px;
 
-            
-    
-            .price-information{
+
+            .price-information {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 width: 100%;
                 height: 100px;
                 border-bottom: 1px solid $quaternary-color;
+                padding-bottom: 10px;
             }
-    
-            h2{
+
+            h2 {
                 font-size: 32px;
                 font-weight: 700;
             }
-    
-            p{
+
+            p {
                 font-size: 24px;
                 font-weight: 700;
             }
-    
-            .plan-benefits{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
+
+            .list-benefits {
+                height: 500px;
+                width: 100%;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 10px;
+
+                    .plan-benefits {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                    }
+                }
             }
-    
         }
 
-        .card-prices:hover{
+        .card-prices:hover {
             transform: scale(105%);
             transition: all 0.3s ease;
             border: 1px solid $primary-color;
             cursor: pointer;
         }
-        
     }
-
-   
 }
 
 // Estilos para a seção community
 
-.community-section{
+.community-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -279,112 +280,106 @@
     padding: 10px 20vw;
     gap: 20px;
 
-    .member-message{
+    .member-message {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
     }
 
-    .community-avaliable{
+    .community-avaliable {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 0;
 
-        img{
+        img {
             margin: 0;
         }
     }
 
-    .community-footer{
+    .community-footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 40vw;
-        
 
-        .member{
+        .member {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
 
-            img{
+            img {
                 border-radius: 50%;
             }
 
-            .member-text{
+            .member-text {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
             }
 
-            .community-pointers{
+            .community-pointers {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
 
-                img{
+                img {
                     cursor: pointer;
                 }
             }
-
         }
     }
-
-
 }
 
 //Configuração de Responsividade
 @media (max-width: 1024px) {
-    .home-section, .program-section, .service-section, .about-section,.community-section{
+    .home-section,
+    .program-section,
+    .service-section,
+    .about-section,
+    .community-section {
         flex-direction: column;
         align-items: center;
         height: 180vh;
         padding: 10px 5vw;
 
-        .div-home-text{
+        .div-home-text {
             width: 100%;
             align-items: center;
             justify-content: center;
         }
 
-        .about-text{
+        .about-text {
             padding: 0;
             width: 100%;
         }
-        
 
-        .program-cards, .about-cards{
+        .program-cards,
+        .about-cards {
             flex-direction: column;
         }
 
-        .community-footer{
+        .community-footer {
             gap: 10vw;
         }
-
-        
     }
 
-    .prices-section{
+    .prices-section {
         height: 300vh;
 
-        .prices-text{
+        .prices-text {
             padding: 0;
             width: 100%;
         }
 
-        .prices-container{
+        .prices-container {
             width: 100%;
             padding: 0 10px;
             grid-template-columns: repeat(1, 1fr);
             gap: 30px;
         }
     }
-
-    
-   
-    
 }

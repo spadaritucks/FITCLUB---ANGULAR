@@ -45,7 +45,7 @@
         // Estilos para o dropdown menu
         .navbar-links{
             position: absolute;
-            top: -260%;
+            top: -330%;
             left: 0;    
             width: 100%;
             flex-direction: column;
@@ -62,13 +62,11 @@
             cursor:pointer
         }
 
-        // Estilos para o ícone do hamburguer ao passar o mouse
         .hamburger-icon:hover{
             transform: scale(110%);
             transition: all 0.3s ease;
         }
 
-        // Estilos para o dropdown menu ao ser aberto
         .navbar-links.open{
             top: 100px;
             transition: all 0.3s ease-in;
