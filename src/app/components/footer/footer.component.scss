@@ -24,6 +24,10 @@
         .contact-icons{
             display: flex;
             gap: 10px;
+
+            img{
+                cursor: pointer;
+            }
         }
     }
 
