@@ -1,5 +1,6 @@
 @import '../../styles/color-variables.scss';
 
+// Estilos para o componente Footer
 .footer-area{
     display: flex;
     justify-content: center;
@@ -19,12 +20,14 @@
         width: 40%;
         height: 10vw;
 
+        // Estilos para os ícones de contato
         .contact-icons{
             display: flex;
             gap: 10px;
         }
     }
 
+    // Estilos para as seções da empresa, sobre e contato
     .footer-company, .footer-about, .footer-contact{
         display: flex;
         flex-direction: column;
@@ -47,6 +50,7 @@
     }
 }
 
+// Configuração de Responsividade
 @media (max-width: 1024px) {
     .footer-area{
         flex-direction: column;

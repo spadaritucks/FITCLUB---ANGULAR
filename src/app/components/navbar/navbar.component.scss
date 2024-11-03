@@ -1,5 +1,6 @@
 @import '../../styles/color-variables.scss';
 
+// Estilos para o componente Navbar
 .navbar-area{
     display: flex;
     align-items: center;
@@ -11,6 +12,7 @@
     z-index: 100;
     background-color: $bg-primary-color;
 
+    // Estilos para os links
     .navbar-links{
         display: flex;
         gap: 30px;
@@ -27,16 +29,20 @@
         }
        
     }
+
+    // Estilos para o ícone do hamburguer
     .hamburger-icon{
         display: none;
     }
 }
 
+// Configuração de Responsividade
 @media (max-width: 1024px) {
     .navbar-area{
 
         padding: 10px 5vw;
 
+        // Estilos para o dropdown menu
         .navbar-links{
             position: absolute;
             top: -260%;
@@ -56,11 +62,13 @@
             cursor:pointer
         }
 
+        // Estilos para o ícone do hamburguer ao passar o mouse
         .hamburger-icon:hover{
             transform: scale(110%);
             transition: all 0.3s ease;
         }
 
+        // Estilos para o dropdown menu ao ser aberto
         .navbar-links.open{
             top: 100px;
             transition: all 0.3s ease-in;

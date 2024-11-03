@@ -1,5 +1,5 @@
 @import "../../styles/color-variables.scss";
-
+// Estilos gerais para o componente Home
 .home-section {
     display: flex;
     align-items: center;
@@ -10,6 +10,7 @@
     width: 100%;
 
     .div-home-text {
+        // Estilos para o texto da seção inicial
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -29,7 +30,7 @@
         }
     }
 }
-
+// Estilos para a seção program
 .program-section {
     display: flex;
     flex-direction: column;
@@ -71,6 +72,7 @@
         gap: 20px;
 
         .program {
+            
             background-color: $bg-tertiary-color;
             padding: 20px;
             border-radius: 10px;
@@ -101,6 +103,8 @@
     }
 }
 
+// Estilos para a seção serviços
+
 .service-section{
     display: flex;
     align-items: center;
@@ -124,8 +128,8 @@
 
         .class-2 {
             position: absolute;
-            top: 150px;
-            right: 22vw;
+            top: 50px;
+            left: 50px;
             z-index: 2;
         }
     }
@@ -145,6 +149,8 @@
 
     }
 }
+
+// Estilos para a seção about
 
 .about-section{
     display: flex;
@@ -180,6 +186,8 @@
         
     }
 }
+
+// Estilos para a seção prices
 
 .prices-section{
     height: 100vh;
@@ -258,6 +266,8 @@
    
 }
 
+// Estilos para a seção community
+
 .community-section{
     display: flex;
     flex-direction: column;
@@ -327,7 +337,7 @@
 
 }
 
-
+//Configuração de Responsividade
 @media (max-width: 1024px) {
     .home-section, .program-section, .service-section, .about-section,.community-section{
         flex-direction: column;

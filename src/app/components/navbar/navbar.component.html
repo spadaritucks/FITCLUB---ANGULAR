@@ -1,5 +1,7 @@
 <nav class="navbar-area">
+    <!-- Logo -->
     <img src="logo.png" width="140px" height="auto">
+    <!-- Links -->
     <div class="navbar-links" [class.open]="isOpen">
         <a href="#home-section">Home</a>
         <a href="#program-section">Program</a>
@@ -8,6 +10,8 @@
         <a href="#prices-section">Prices</a>
         <a href="#community-section">Community</a>
     </div>
+    <!-- Hamburguer Icon -->
     <img src="hamburguer.png" width="40px" alt="" (click)="toggleNavbar()" class="hamburger-icon">
+    <!-- Join Now Button -->
     <button-component buttonName="Join Now" variant="primary" type="button"/>
 </nav>

@@ -1,12 +1,12 @@
 @import '../../styles/color-variables.scss';
 
+// Estilos para o componente Button
 button {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     
-    
-
+    // Estilos para o botão primary
     &.primary {
         background-color: $primary-color;
         color: $quaternary-color;
@@ -17,12 +17,11 @@ button {
         background-color: orangered;
     }
 
+    // Estilos para o botão secondary
     &.secondary {
         background-color: transparent;
         color: $primary-color;
         border: 1px solid $primary-color;
-        
-        
     }
 
     &.secondary:hover {
